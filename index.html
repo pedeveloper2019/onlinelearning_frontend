@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paathshala</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="pageWrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand">
+                <img src="assets/img/photon logo final.png" class="w-100" alt="" srcset="">
+            </a>
+            <form class="form-inline">
+                <input class="form-control" type="search" placeholder="Search for Courses" aria-label="Search">
+                <button class="btn btn-primary" type="button" style="margin-left: -1vw;border-radius: 0;border-top-right-radius: 2vw;border-bottom-right-radius: 2vw;">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto ml-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Course Categories <i class="fa fa-angle-down"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Course Type <i class="fa fa-angle-down"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Career Guide <i class="fa fa-angle-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center mr-3">
+                <button class="btn btn-success">Sign Up</button>
+                <a href="#" class="btn text-light">
+                    <span>Log In</span>
+                </a>
+                <div class="d-flex language">
+                    <div class="globe d-inline d-flex rounded-circle bg-light" style="padding: 1px 3px;">
+                        <i class="fa fa-globe fa-2x"></i>
+                        <div class="d-inline text-light rounded-circle bg-primary d-flex" style="position: absolute;top: 3px;right: 10px;width:25px;height: 25px;text-indent: 5px;overflow: hidden;vertical-align: text-top;">
+                            <div class="langspin d-flex">
+                                <span class="small d-flex">en</span>
+                                <span class=""><img src="assets/img/en.svg" alt="" width="25px"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar-extention" style="position: fixed;width:100%;">
+            <div class="wrap-div pt-2 pl-2 pr-2 d-flex flex-row justify-content-center align-items-center text-center flex-wrap">
+                <div class="p-3 flex-1 mr-1 bb-green">
+                    <i class="fa fa-laptop fa-3x"></i>
+                    <p class="text-center p-0 m-0">IT</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-blue">
+                    <i class="fa fa-language fa-3x"></i>
+                    <p class="text-center p-0 m-0">Language</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-red">
+                    <i class="fa fa-flask fa-3x"></i>
+                    <p class="text-center p-0 m-0">Science</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-black">
+                    <i class="fa fa-heartbeat fa-3x"></i>
+                    <p class="text-center p-0 m-0">Health</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-lightgreen">
+                    <i class="fa fa-grav fa-3x"></i>
+                    <p class="text-center p-0 m-0">Humanities</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-purple">
+                    <i class="fa fa-briefcase fa-3x"></i>
+                    <p class="text-center p-0 m-0">Business</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-orange">
+                    <i class="fa fa-puzzle-piece fa-3x"></i>
+                    <p class="text-center p-0 m-0">Math</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-red">
+                    <i class="fa fa-bullseye fa-3x"></i>
+                    <p class="text-center p-0 m-0">Marketing</p>
+                </div>
+                <div class="p-3 flex-1 mr-1 bb-green">
+                    <i class="fa fa-bicycle fa-3x"></i>
+                    <p class="text-center p-0 m-0">Lifestyle</p>
+                </div>
+                <div class="p-3 flex-1 bb-blue">
+                    <i class="fa fa-sitemap fa-3x"></i>
+                    <p class="text-center p-0 m-0">All Categories</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+$(function () {
+    $(".language").mouseenter(function () { 
+        $(".globe").toggleClass("bg-light bg-primary text-light");
+        $(".langspin").css("transform","translate3d(-25px,-3px,0px)");
+    });
+    $(".language").mouseleave(function () { 
+        $(".globe").toggleClass("bg-primary bg-light text-light");
+        $(".langspin").css("transform","translateX(0px)");
+    });
+    height = $(".navbar").height()
+    $(".navbar-extention").css("top",height)
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
