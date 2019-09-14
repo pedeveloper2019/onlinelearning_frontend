@@ -1,0 +1,57 @@
+.navbar-brand{
+    width: 12%;
+    /* border: 1px solid red; */
+}
+.bb-green:hover{
+    border-bottom: 8px solid green;
+    color:green;  
+}
+.bb-red:hover{
+    border-bottom: 8px solid red;
+    color:red;  
+}
+.bb-blue:hover{
+    border-bottom: 8px solid rgb(37, 117, 221);
+    color:rgb(37, 117, 221);  
+}
+.bb-black:hover{
+    border-bottom: 8px solid black;
+    color:black;  
+}
+.bb-lightgreen:hover{
+    border-bottom: 8px solid lightgreen;
+    color:lightgreen;  
+}
+.bb-orange:hover{
+    border-bottom: 8px solid orange;
+    color:orange;  
+}
+.bb-purple:hover{
+    border-bottom: 8px solid purple;
+    color:purple;  
+}
+
+.border-red{
+    border: 1px solid red !important;
+}
+.flex-1{
+    flex:1;
+}
+body{
+    font-family:  Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+.navbar{
+    padding: 0px;
+}
+.language , .globe , .langspin{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.wrap-div{
+    background: #fff;
+}
+.wrap-div div{
+    border-bottom: 8px solid #fff;
+    background: #ddd;
+}
