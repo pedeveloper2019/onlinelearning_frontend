@@ -19,8 +19,8 @@
     color:black;  
 }
 .bb-lightgreen:hover{
-    border-bottom: 8px solid lightgreen;
-    color:lightgreen;  
+    border-bottom: 8px solid rgb(85, 150, 85);
+    color:rgb(85, 150, 85);  
 }
 .bb-orange:hover{
     border-bottom: 8px solid orange;
