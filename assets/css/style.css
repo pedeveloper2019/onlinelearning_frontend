@@ -34,6 +34,9 @@
 .border-red{
     border: 1px solid red !important;
 }
+.hidden{
+    display: none !important;
+}
 .flex-1{
     flex:1;
 }
@@ -47,6 +50,9 @@ body{
 .language , .globe , .langspin{
     cursor: pointer;
     transition: all .2s ease-in-out;
+}
+.navbar-extention{
+    display: none;
 }
 .wrap-div{
     background: #fff;

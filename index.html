@@ -27,7 +27,7 @@
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto ml-4">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Course Categories <i class="fa fa-angle-down"></i></a>
+                        <a class="nav-link" href="#" id="courseCategory">Course Categories <i class="fa fa-angle-down"></i></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Course Type <i class="fa fa-angle-down"></i></a>
@@ -118,6 +118,11 @@ $(function () {
     });
     height = $(".navbar").height()
     $(".navbar-extention").css("top",height)
+    $("#courseCategory").click(function (e) { 
+        e.preventDefault();
+        $(".navbar-extention").slideToggle();
+        $(this).children("i").toggleClass("fa-angle-down fa-angle-up")
+    });
 });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
