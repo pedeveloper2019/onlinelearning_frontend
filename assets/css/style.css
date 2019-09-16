@@ -1,33 +1,68 @@
+.smaller{
+    font-size: .7rem;
+}
 .navbar-brand{
     width: 12%;
     /* border: 1px solid red; */
 }
+.bg-torngreen{
+    background: #72ba21 !important;
+    color: white;
+}
 .bb-green:hover{
     border-bottom: 8px solid green;
+    color:green;  
+}
+.bt-green:hover{
+    border-top: 4px solid green;
     color:green;  
 }
 .bb-red:hover{
     border-bottom: 8px solid red;
     color:red;  
 }
+.bt-red:hover{
+    border-top: 4px solid red;
+    color:red;  
+}
 .bb-blue:hover{
     border-bottom: 8px solid rgb(37, 117, 221);
+    color:rgb(37, 117, 221);  
+}
+.bt-blue:hover{
+    border-top: 4px solid rgb(37, 117, 221);
     color:rgb(37, 117, 221);  
 }
 .bb-black:hover{
     border-bottom: 8px solid black;
     color:black;  
 }
+.bt-black:hover{
+    border-top: 4px solid black;
+    color:black;  
+}
 .bb-lightgreen:hover{
     border-bottom: 8px solid rgb(85, 150, 85);
+    color:rgb(85, 150, 85);  
+}
+.bt-lightgreen:hover{
+    border-top: 4px solid rgb(85, 150, 85);
     color:rgb(85, 150, 85);  
 }
 .bb-orange:hover{
     border-bottom: 8px solid orange;
     color:orange;  
 }
+.bt-orange:hover{
+    border-top: 4px solid orange;
+    color:orange;  
+}
 .bb-purple:hover{
     border-bottom: 8px solid purple;
+    color:purple;  
+}
+.bt-purple:hover{
+    border-top: 4px solid purple;
     color:purple;  
 }
 
@@ -60,4 +95,45 @@ body{
 .wrap-div div{
     border-bottom: 8px solid #fff;
     background: #ddd;
+}
+.topPanel{
+    background: linear-gradient(90deg,#232021 0,#0093c8);
+}
+.topPanelTable div div{
+    border-top: 4px solid transparent;
+    margin-bottom: 15%;
+    margin-right: 15%;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+.topPanelTable div div:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+.mainSelectors .Selectors .Selector.active::after{
+   width: 100%;
+}
+.mainSelectors .Selectors .Selector::after{
+    content: '';
+    display: flex;
+    width: 0;
+    height: 2px;
+    border-bottom:4px solid rgb(29, 108, 228);
+    transition: all .3s;
+}
+.mainSelectors .Selectors .Selector:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.showCards{
+    overflow: auto;
+    text-align: center;
+}
+.showCards .card{
+    width: 250px;
+    display: inline-block;
+    margin-right: .5%;
+    margin-left: .5%;
+    margin-bottom: 2%;
 }
