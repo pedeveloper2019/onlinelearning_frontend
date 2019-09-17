@@ -137,3 +137,45 @@ body{
     margin-left: .5%;
     margin-bottom: 2%;
 }
+.testimonialWrapper{
+    position: relative;
+    height:70vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-image: url('../img/Testimonials/testimonials-triangle.png');
+    background-position:top right;
+    background-repeat: no-repeat;
+}
+.testimonialWrapper div.left-triangle{
+    position: absolute;
+    bottom: 0px;
+    z-index: 3;
+}
+.testimonials{
+    width: 40% !important;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    /* margin: 0 auto; */
+    padding-top: 2rem;
+}
+.testimonials .item{
+    height: 100%;
+    width: 40vw;
+    /* overflow: auto; */
+    /* border: 1px solid red; */
+    /* position: absolute; */
+}
+.text-testimonials-Wrapper{
+    /* border: 1px solid red; */
+    width: 40vw;
+    position: absolute;
+    top: 0px;
+    left: 35vw;
+    z-index: 2;
+    padding-top: 8rem;
+}
+.text-testimonials{
+    /* border: 1px solid red; */
+    height: 20vw;
+}
