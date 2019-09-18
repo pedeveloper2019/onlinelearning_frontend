@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/plugins/Owl-Carousel/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="assets/plugins/Owl-Carousel/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -489,7 +490,7 @@
                 <div class="left-triangle">
                     <img src="assets/img/Testimonials/testimonials-triangle-left.png" alt="">
                 </div>
-                <div class="testimonials owl-carousel">
+                <div class="testimonials">
                     <div class="item">
                         <img src="assets/img/Testimonials/1.jpg" alt="">
                     </div>
@@ -505,8 +506,8 @@
                 </div>
                 <div class="text-testimonials-Wrapper">
                     <i class="fa fa-quote-right fa-3x" style="color: #eee;"></i>
-                    <div class="text-testimonials owl-carousel">
-                        <div class="text-testimonials owl-carousel owl-theme">
+                    <div class="text-testimonials">
+                        <div class="text-testimonials">
                             <div class="item">
                                 <p>
                                     Some Text Here Some Text Here Some Text Here<br>
@@ -541,10 +542,39 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary">See All Testimonials</a>
+                    <a href="#" class="btn btn-primary mt-5">See All Testimonials</a>
                 </div>
-                <div class="C-user-icons border-red" style="position:absolute;left:70vw;width: 28vw;top: 0px;height: 100%;">
-                    circular User icons
+                <div class="C-user-icons" style="position:absolute;left:70vw;width: 28vw;top: 0px;height: 100%;">
+                    <div class="home-bubble hb-1">
+                        <img src="assets/img/home-bubble-1.jpg" alt="">
+                        <div class="hb-text hbt-1">
+                            Some Text Here
+                        </div>
+                    </div>
+                    <div class="home-bubble hb-2">
+                        <img src="assets/img/home-bubble-2.jpg" alt="">
+                        <div class="hb-text hbt-2">
+                            Some Text Here
+                        </div>
+                    </div>
+                    <div class="home-bubble hb-3">
+                        <img src="assets/img/home-bubble-3.jpg" alt="">
+                        <div class="hb-text hbt-3">
+                            Some Text Here
+                        </div>
+                    </div>
+                    <div class="home-bubble hb-4">
+                        <img src="assets/img/home-bubble-4.jpg" alt="">
+                        <div class="hb-text hbt-4">
+                            Some Text Here
+                        </div>
+                    </div>
+                    <div class="home-bubble hb-5">
+                        <img src="assets/img/home-bubble-5.jpg" alt="">
+                        <div class="hb-text hbt-5">
+                            Some Text Here
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -553,26 +583,24 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="assets/plugins/jquery-countTo/jquery.countTo.js"></script>
-<script src="assets/plugins/Owl-Carousel/dist/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+    integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M=" crossorigin="anonymous"></script>
 <script>
     $(function () {
-        $('.testimonials').owlCarousel({
-            loop: true,
-            margin: 10,
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: false
-        })
-        $('.text-testimonials').owlCarousel({
-            loop: true,
-            margin: 10,
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: false,
-            dots: true
-        })
+        $('.testimonials').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.text-testimonials'
+        });
+        $('.text-testimonials').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.testimonials',
+            dots: true,
+            arrows:false
+        });
         $(".Counts").countTo()
         $(".language").mouseenter(function () {
             $(".globe").toggleClass("bg-light bg-primary text-light");
